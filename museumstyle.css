@@ -1,3 +1,7 @@
+body{
+    background-color:#f6f0e2;
+    color: #015270;
+}
 .utility {
  position: fixed;
     top: 0;
@@ -8,13 +12,13 @@
     justify-content: space-between;
     gap: 15px;
     padding: 5px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #f1e5cf;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: background-color 0.3s ease;
     flex-wrap: wrap }
 .icon{
-    fill: rgb(0, 0, 0);
+    fill: #015270;
     fill-rule: evenodd;
     clip-rule: evenodd;
     width: 24px;
@@ -27,7 +31,7 @@ transform: scale(0.8);
 transform: scale(1.2);
 }
 button{
-    background-color: transparent;
+    background-color: #94bece;
     border: none;
     cursor: pointer;
     border-radius: 5px;
