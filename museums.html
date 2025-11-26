@@ -3,59 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="museumstyle.css" type="text/css">
+    <title>Book Ticket</title>
 </head>
+
 <body>  
-    <div class="utility">
-        <div class="left">
-        <a href="homepage.html">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M13.558 5.534a2.25 2.25 0 0 0-3.116 0l-4.626 4.44a.75.75 0 0 0-.218.405a27.3 27.3 0 0 0-.121 9.15l.112.721h2.977v-6.211a.75.75 0 0 1 .75-.75h5.368a.75.75 0 0 1 .75.75v6.211h2.977l.112-.72a27.3 27.3 0 0 0-.12-9.151a.75.75 0 0 0-.219-.405zM9.404 4.452a3.75 3.75 0 0 1 5.192 0l4.627 4.44c.34.326.57.752.655 1.216a28.9 28.9 0 0 1 .127 9.653l-.18 1.157a.98.98 0 0 1-.972.832h-4.169a.75.75 0 0 1-.75-.75v-6.211h-3.868V21a.75.75 0 0 1-.75.75H5.147a.98.98 0 0 1-.972-.832l-.18-1.157a28.9 28.9 0 0 1 .127-9.653c.085-.464.315-.89.655-1.217z"/>
-            </svg>
-        </a> 
-        <h1>Monuments & musuems</h1>
-        </div>
-     <div class="search">
-       <input type="text" class="searchbar" placeholder="Search...">
-        <button onclick="searchFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                    <path d="M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/>
-                </svg>
-        </button>
-        </div>
-       <div class "right">
-   
-        <button onclick="darkmode()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M11.486 4.768a7.25 7.25 0 1 0 7.399 9.51a6.25 6.25 0 0 1-7.398-9.51M3.25 12a8.75 8.75 0 0 1 10.074-8.65a.75.75 0 0 1 .336 1.342a4.75 4.75 0 1 0 5.83 7.499a.75.75 0 0 1 1.22.654A8.751 8.751 0 0 1 3.25 12"/>
-            </svg>
-        </button>
-        <button onclick="textlarge()">
-             <svg xmlns="http://www.w3.org/2000/svg" class="icon large" viewBox="0 0 24 24">
-                <path d="M8 6.75a.75.75 0 0 0-.711.513l-3 9a.75.75 0 0 0 1.423.474L6.29 15h4.169l.579 1.737a.75.75 0 0 0 1.423-.474l-3-9a.75.75 0 0 0-.712-.513zm1.96 6.75H6.79l1.585-4.753zm6.415-3.75a3.1 3.1 0 0 1 1.884.633a.75.75 0 0 1 1.491.117v6a.75.75 0 0 1-1.49.117a3.1 3.1 0 0 1-1.885.633C14.42 17.25 13 15.474 13 13.5s1.42-3.75 3.375-3.75M14.5 13.5c0-1.34.93-2.25 1.875-2.25s1.875.91 1.875 2.25s-.93 2.25-1.875 2.25c-.944 0-1.875-.91-1.875-2.25"/>
-            </svg>
-        </button>
-        <button onclick="textmedium()">
-             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M8 6.75a.75.75 0 0 0-.711.513l-3 9a.75.75 0 0 0 1.423.474L6.29 15h4.169l.579 1.737a.75.75 0 0 0 1.423-.474l-3-9a.75.75 0 0 0-.712-.513zm1.96 6.75H6.79l1.585-4.753zm6.415-3.75a3.1 3.1 0 0 1 1.884.633a.75.75 0 0 1 1.491.117v6a.75.75 0 0 1-1.49.117a3.1 3.1 0 0 1-1.885.633C14.42 17.25 13 15.474 13 13.5s1.42-3.75 3.375-3.75M14.5 13.5c0-1.34.93-2.25 1.875-2.25s1.875.91 1.875 2.25s-.93 2.25-1.875 2.25c-.944 0-1.875-.91-1.875-2.25"/>
-            </svg>
-        </button>
-        <button onclick="textsmall()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon small" viewBox="0 0 24 24">
-                <path d="M8 6.75a.75.75 0 0 0-.711.513l-3 9a.75.75 0 0 0 1.423.474L6.29 15h4.169l.579 1.737a.75.75 0 0 0 1.423-.474l-3-9a.75.75 0 0 0-.712-.513zm1.96 6.75H6.79l1.585-4.753zm6.415-3.75a3.1 3.1 0 0 1 1.884.633a.75.75 0 0 1 1.491.117v6a.75.75 0 0 1-1.49.117a3.1 3.1 0 0 1-1.885.633C14.42 17.25 13 15.474 13 13.5s1.42-3.75 3.375-3.75M14.5 13.5c0-1.34.93-2.25 1.875-2.25s1.875.91 1.875 2.25s-.93 2.25-1.875 2.25c-.944 0-1.875-.91-1.875-2.25"/>
-            </svg>
-        </button>
-        <button onclick="share()">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M11 7.05V4a1 1 0 0 0-1-1a1 1 0 0 0-.7.29l-7 7a1 1 0 0 0 0 1.42l7 7A1 1 0 0 0 11 18v-3.1h.85a10.89 10.89 0 0 1 8.36 3.72a1 1 0 0 0 1.11.35A1 1 0 0 0 22 18c0-9.12-8.08-10.68-11-10.95m.85 5.83a15 15 0 0 0-2 .13A1 1 0 0 0 9 14v1.59L4.42 11L9 6.41V8a1 1 0 0 0 1 1c.91 0 8.11.2 9.67 6.43a13.07 13.07 0 0 0-7.82-2.55"/>
-            </svg>
-        </button>
-        </div>
-       </div>
-    </div>
+    <div id="toolbarContainer"></div>
+
     <div class="content">
-        Book with us your ticket into the wonders of Egypt <h2>Welcome to the Museums of Egypt</h2>
-        <p>Explore the rich history and culture of Egypt through its world-renowned museums. From ancient artifacts to modern art, our museums offer a glimpse into the fascinating past and vibrant present of this incredible country.</p>    
+        Book with us your ticket into the wonders of Egypt 
+        <h2>Welcome to the Museums of Egypt</h2>
+        <p>Explore the rich history and culture of Egypt...</p>
+    </div>
+
+    <script>
+        fetch("toolbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("toolbarContainer").innerHTML = data;
+            if (typeof initToolbarFunctions === "function") {
+                initToolbarFunctions();
+            }
+        })
+        .catch(error => console.error("Error loading toolbar:", error));
+    </script>
+
+    <script src="toolbar.js"></script>
 </body>
 </html>

@@ -68,8 +68,30 @@ nav li.searchContainer{
     align-items: center; 
     gap: 10px; 
 } 
-input{ width: 60%; margin-left: auto; padding: 5px; border: none; border-radius: 5px; } 
-svg{ width: 26px; height: 26px; fill:#e3e3e3; cursor: pointer; } 
-.menubutton{ display: none; } 
-@media(max-width:800px) { .hideOnMobile{ display:none; } .menubutton{ display:block; } } 
-@media(max-width:500px) { .sidebar{ width: 100%; } }
+input{ 
+    width: 60%; 
+    margin-left: auto; 
+    padding: 5px; 
+    border: none; 
+    border-radius: 5px; 
+} 
+svg{ 
+    width: 26px; 
+    height: 26px; 
+    fill:#e3e3e3; 
+    cursor: pointer; 
+} 
+.menubutton{ 
+    display: none; 
+} 
+@media(max-width:800px) { 
+    .hideOnMobile{ 
+        display:none; 
+    } 
+    .menubutton{ 
+        display:block; 
+    } } 
+@media(max-width:500px) { 
+    .sidebar{ 
+        width: 100%; 
+    } }
