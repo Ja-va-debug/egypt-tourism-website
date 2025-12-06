@@ -1,0 +1,115 @@
+body {
+    background-color:antiquewhite;
+    background-image: url("../img/museumsSec-backObjLeft2.png");
+    background-repeat: repeat;
+    padding: 100px 10px 1000px 82px;
+    
+}
+
+#hero-section1-img {
+    width: 100%;
+    height: 300px;
+    filter: brightness(90%);
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.hero-section:hover #hero-section1-img {
+    transform: scale(1.05);
+}
+
+h1 {
+    position: absolute;
+    bottom: 190px;
+    left: 200px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    font-family: 'Cairo', sans-serif;
+}
+.hero-section1-title {
+    bottom: 120px;
+    left: 50px;
+    color: rgb(230, 230, 230);
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    font-family: 'Cairo', sans-serif;
+    background-color: rgb(172, 111, 35);
+    display:inline-block;
+    border-left:4px solid rgb(0, 0, 66)
+}
+
+.souvenir-preview{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 750px) {
+  .souvenir-preview {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .souvenir-preview {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .souvenir-preview {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.ahmes-papyrus, .Obelisk ,.karnak-temple-inscriptions ,.tutankhamun-mask, .papyrus-hieroglyphs{
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    background-color: #fff8dc;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ahmes-papyrus-img , #obelisk-img ,#karnak-temple-inscriptions-img, #tutankhamun-mask-img , #papyrus-hieroglyphs-img{
+    height: 200px;
+    width:150px;
+    padding-bottom:5px ;
+    border-bottom: 1px solid brown;
+}
+a{
+    padding-top: 1px solid brown;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.location{
+    border-top:1px solid brown ;
+}
+#location-icon{
+    height: 30px;
+    width: 30px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+.location-text{
+    font-size: 20px;
+}
+.ahmes-papyrus-description, .obelisk-description ,.karnak-temple-inscriptions-description ,.tutankhamun-mask-description ,.papyrus-hieroglyphs-description{
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    border-top:1px solid brown ;
+}
+#read-more-icon{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 8px;
+}

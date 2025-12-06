@@ -1,0 +1,34 @@
+.sidebar-section {
+    background-color: antiquewhite;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 72px;
+    z-index: 2000;
+    border-right: 1px solid brown;
+}
+.social-media-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 100px;
+}
+#facebook-icon-sidebar { 
+    width: 45px;
+    height: 45px;
+}
+#facebook-icon-sidebar:hover,#instagram-icon-sidebar:hover, #twitter-icon-sidebar:hover, #telegram-icon-sidebar:hover {
+    cursor: pointer;
+}
+#instagram-icon-sidebar, #twitter-icon-sidebar  {
+    border-radius: 30px;
+    height: 30px;
+}
+#telegram-icon-sidebar {
+   
+    width: 30px;
+    height: 30px;
+}
