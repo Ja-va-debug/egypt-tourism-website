@@ -1,61 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="style.css"></script>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="museumstyle.css" type="text/css">
+    <title>Museums</title>
 </head>
-<body>  
-    <div class="utility">
-        <div class="left">
-        <a href="homepage.html">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M13.558 5.534a2.25 2.25 0 0 0-3.116 0l-4.626 4.44a.75.75 0 0 0-.218.405a27.3 27.3 0 0 0-.121 9.15l.112.721h2.977v-6.211a.75.75 0 0 1 .75-.75h5.368a.75.75 0 0 1 .75.75v6.211h2.977l.112-.72a27.3 27.3 0 0 0-.12-9.151a.75.75 0 0 0-.219-.405zM9.404 4.452a3.75 3.75 0 0 1 5.192 0l4.627 4.44c.34.326.57.752.655 1.216a28.9 28.9 0 0 1 .127 9.653l-.18 1.157a.98.98 0 0 1-.972.832h-4.169a.75.75 0 0 1-.75-.75v-6.211h-3.868V21a.75.75 0 0 1-.75.75H5.147a.98.98 0 0 1-.972-.832l-.18-1.157a28.9 28.9 0 0 1 .127-9.653c.085-.464.315-.89.655-1.217z"/>
+<body>
+   <nav class="uppernav">
+    <ul>
+        <li><a href="homepage.html">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 465 465">
+<g>
+	<path d="M457.5,211.363H336.82v-18.897c0-32.293-14.645-62.262-40.18-82.223c-3.265-2.552-7.977-1.974-10.528,1.29
+		c-2.551,3.264-1.974,7.977,1.29,10.528c21.874,17.098,34.418,42.76,34.418,70.405v18.897h-15.776
+		c-3.457-16.543-18.107-29.026-35.638-29.126c-3.501-17.728-19.167-31.138-37.907-31.138s-34.406,13.411-37.907,31.138
+		c-17.531,0.101-32.181,12.583-35.638,29.126H143.18v-18.897c0-27.646,12.544-53.308,34.417-70.405
+		c3.263-2.551,3.841-7.264,1.29-10.528c-2.55-3.263-7.262-3.841-10.528-1.29c-25.534,19.96-40.179,49.929-40.179,82.223v18.897H7.5
+		c-4.142,0-7.5,3.358-7.5,7.5c0,54.521,44.356,98.878,98.878,98.878h29.582c2.997,42.117,31.046,78.409,71.708,91.693
+		c0.774,0.252,1.559,0.373,2.331,0.373c3.157,0,6.094-2.009,7.128-5.173c1.286-3.938-0.863-8.172-4.8-9.458
+		c-34.474-11.262-58.367-41.831-61.331-77.434h15.061c3.772,37.471,35.494,66.82,73.943,66.82s70.17-29.349,73.943-66.82h15.061
+		c-2.964,35.603-26.857,66.172-61.331,77.434c-3.937,1.287-6.086,5.521-4.8,9.458c1.034,3.164,3.971,5.173,7.128,5.173
+		c0.771,0,1.557-0.12,2.331-0.373c40.663-13.284,68.711-49.576,71.709-91.693h29.582c54.521,0,98.878-44.356,98.878-98.878
+		C465,214.721,461.642,211.363,457.5,211.363z M194.807,197.236h6.556h32.275c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-23.548
+		c3.143-9.367,11.999-16.138,22.411-16.138c13.034,0,23.637,10.604,23.637,23.638c0,4.142,3.358,7.5,7.5,7.5h6.556
+		c11.925,0,21.627,9.702,21.627,21.627c0,11.925-9.702,21.626-21.627,21.626h-17.705c-7.642,0-14.757,3.034-19.989,8.133
+		c-5.231-5.099-12.347-8.133-19.989-8.133h-17.704c-11.925,0-21.627-9.702-21.627-21.626
+		C173.18,206.938,182.881,197.236,194.807,197.236z M50.428,287.282h47.347c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5H34.256
+		c-3.927-4.742-7.334-9.927-10.154-15.459h55.603c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-61.51
+		c-1.419-4.981-2.391-10.149-2.863-15.459H158.18v76.378H98.878C80.84,302.741,64.122,297.007,50.428,287.282z M173.18,310.241
+		v-61.843c6.065,4.453,13.542,7.091,21.627,7.091h17.704c5.45,0,10.336,3.242,12.489,8.172v105.409
+		C195.821,365.37,173.18,340.409,173.18,310.241z M240,369.071V263.662c2.153-4.93,7.039-8.172,12.489-8.172h17.705
+		c8.084,0,15.562-2.638,21.627-7.091v61.843C291.82,340.409,269.179,365.37,240,369.071z M306.82,302.741v-76.378h142.847
+		c-0.472,5.31-1.444,10.478-2.863,15.459h-61.51c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h55.603
+		c-2.82,5.532-6.227,10.717-10.154,15.459h-63.519c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h47.347
+		c-13.694,9.726-30.412,15.459-48.45,15.459H306.82z"/>
+	<path d="M232.5,136.099c22.305,0,40.452-18.147,40.452-40.453S254.805,55.193,232.5,55.193c-22.306,0-40.453,18.147-40.453,40.453
+		S210.194,136.099,232.5,136.099z M232.5,70.193c14.034,0,25.452,11.418,25.452,25.453s-11.418,25.453-25.452,25.453
+		c-14.035,0-25.453-11.418-25.453-25.453S218.465,70.193,232.5,70.193z"/>
+</g>
+</svg>
+        </a></li>
+        <li id="toolTitle"><h1>Destinations</h1></li>
+       
+        <li class="hideOnMobile"><button onclick="darkMode()"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg></button></li>
+        <li class="hideOnMobile"><button onclick="fontinc()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm504 104v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"/></svg></button></li>
+        <li class="hideOnMobile"><button onclick="fontReset()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-200v-80h560v80H200Zm76-160 164-440h80l164 440h-76l-38-112H392l-40 112h-76Zm138-176h132l-64-182h-4l-64 182Z"/></svg></button></li>
+        <li class="hideOnMobile"><button onclick="fontdec()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  ><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm384-16v-80h320v80H600Z"/></svg></button></li>
+        <li class="hideOnMobile"><button onclick="share()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg></button></li>
+        <li id="menubutton" onclick="sideBarOn()">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1060 960 960" >
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+    </ul>
+</nav>
+
+<div class="sidebar">
+    <ul>
+        <li onclick="sideBarOff()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
             </svg>
-        </a> 
-        <h1>Monuments & musuems</h1>
-        </div>
-     <div class="search">
-       <input type="text" class="searchbar" placeholder="Search...">
-        <button onclick="searchFunction()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                    <path d="M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/>
-                </svg>
-        </button>
-        </div>
-       <div class "right">
-   
-        <button onclick="darkmode()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M11.486 4.768a7.25 7.25 0 1 0 7.399 9.51a6.25 6.25 0 0 1-7.398-9.51M3.25 12a8.75 8.75 0 0 1 10.074-8.65a.75.75 0 0 1 .336 1.342a4.75 4.75 0 1 0 5.83 7.499a.75.75 0 0 1 1.22.654A8.751 8.751 0 0 1 3.25 12"/>
-            </svg>
-        </button>
-        <button onclick="textlarge()">
-             <svg xmlns="http://www.w3.org/2000/svg" class="icon large" viewBox="0 0 24 24">
-                <path d="M8 6.75a.75.75 0 0 0-.711.513l-3 9a.75.75 0 0 0 1.423.474L6.29 15h4.169l.579 1.737a.75.75 0 0 0 1.423-.474l-3-9a.75.75 0 0 0-.712-.513zm1.96 6.75H6.79l1.585-4.753zm6.415-3.75a3.1 3.1 0 0 1 1.884.633a.75.75 0 0 1 1.491.117v6a.75.75 0 0 1-1.49.117a3.1 3.1 0 0 1-1.885.633C14.42 17.25 13 15.474 13 13.5s1.42-3.75 3.375-3.75M14.5 13.5c0-1.34.93-2.25 1.875-2.25s1.875.91 1.875 2.25s-.93 2.25-1.875 2.25c-.944 0-1.875-.91-1.875-2.25"/>
-            </svg>
-        </button>
-        <button onclick="textmedium()">
-             <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M8 6.75a.75.75 0 0 0-.711.513l-3 9a.75.75 0 0 0 1.423.474L6.29 15h4.169l.579 1.737a.75.75 0 0 0 1.423-.474l-3-9a.75.75 0 0 0-.712-.513zm1.96 6.75H6.79l1.585-4.753zm6.415-3.75a3.1 3.1 0 0 1 1.884.633a.75.75 0 0 1 1.491.117v6a.75.75 0 0 1-1.49.117a3.1 3.1 0 0 1-1.885.633C14.42 17.25 13 15.474 13 13.5s1.42-3.75 3.375-3.75M14.5 13.5c0-1.34.93-2.25 1.875-2.25s1.875.91 1.875 2.25s-.93 2.25-1.875 2.25c-.944 0-1.875-.91-1.875-2.25"/>
-            </svg>
-        </button>
-        <button onclick="textsmall()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon small" viewBox="0 0 24 24">
-                <path d="M8 6.75a.75.75 0 0 0-.711.513l-3 9a.75.75 0 0 0 1.423.474L6.29 15h4.169l.579 1.737a.75.75 0 0 0 1.423-.474l-3-9a.75.75 0 0 0-.712-.513zm1.96 6.75H6.79l1.585-4.753zm6.415-3.75a3.1 3.1 0 0 1 1.884.633a.75.75 0 0 1 1.491.117v6a.75.75 0 0 1-1.49.117a3.1 3.1 0 0 1-1.885.633C14.42 17.25 13 15.474 13 13.5s1.42-3.75 3.375-3.75M14.5 13.5c0-1.34.93-2.25 1.875-2.25s1.875.91 1.875 2.25s-.93 2.25-1.875 2.25c-.944 0-1.875-.91-1.875-2.25"/>
-            </svg>
-        </button>
-        <button onclick="share()">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24">
-                <path d="M11 7.05V4a1 1 0 0 0-1-1a1 1 0 0 0-.7.29l-7 7a1 1 0 0 0 0 1.42l7 7A1 1 0 0 0 11 18v-3.1h.85a10.89 10.89 0 0 1 8.36 3.72a1 1 0 0 0 1.11.35A1 1 0 0 0 22 18c0-9.12-8.08-10.68-11-10.95m.85 5.83a15 15 0 0 0-2 .13A1 1 0 0 0 9 14v1.59L4.42 11L9 6.41V8a1 1 0 0 0 1 1c.91 0 8.11.2 9.67 6.43a13.07 13.07 0 0 0-7.82-2.55"/>
-            </svg>
-        </button>
-        </div>
-       </div>
+        </li>
+        <li><button onclick="darkMode()"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg></button></li>
+        <li><button onclick="fontinc()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm504 104v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"/></svg></button></li>
+        <li><button onclick="fontReset()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-200v-80h560v80H200Zm76-160 164-440h80l164 440h-76l-38-112H392l-40 112h-76Zm138-176h132l-64-182h-4l-64 182Z"/></svg></button></li>
+        <li><button onclick="fontdec()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  ><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm384-16v-80h320v80H600Z"/></svg></button></li>
+        <li><button onclick="share()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg></button></li>
+    </ul>
+</div>
+
+<nav class="lownav">
+    <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#middle">Places</a></li>
+        <li><a href="#book">Booking</a></li>
+        <li><a href="#contact">contact us</a></li>
+    </ul>
+</nav>
+    <div class="top">
+        <img src="pyramids-removebg.png" alt="" class="pyramids-overlay">
+        <h1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 465 465">
+<g>
+	<path d="M359.789,204.209c-1.498-1.416-3.509-2.154-5.571-2.039l-67.758,3.785c6.814-7.158,13.099-15.166,18.611-23.757
+		c15.107-23.541,23.428-50.131,23.428-74.871c0-27.155-9.011-53.035-25.373-72.873C285.064,12.559,259.322,0,232.5,0
+		s-52.564,12.558-70.625,34.455C145.512,54.292,136.5,80.171,136.5,107.328c0,24.741,8.32,51.33,23.427,74.871
+		c5.513,8.591,11.798,16.599,18.611,23.756l-67.756-3.785c-2.066-0.121-4.075,0.623-5.572,2.039
+		c-1.498,1.417-2.347,3.388-2.347,5.449v38.695c0,2.062,0.849,4.033,2.347,5.449c1.499,1.417,3.515,2.155,5.572,2.039l91.984-5.139
+		l-20.404,197.202c-0.325,3.136,1.347,6.141,4.183,7.519c0.805,0.391,20.017,9.577,45.954,9.577s45.148-9.187,45.953-9.577
+		c2.837-1.378,4.509-4.382,4.184-7.519l-20.404-197.202l91.985,5.139c2.061,0.114,4.073-0.623,5.571-2.039
+		c1.498-1.417,2.347-3.388,2.347-5.449v-38.695C362.136,207.597,361.287,205.625,359.789,204.209z M347.136,240.422l-92.851-5.188
+		c-2.188-0.124-4.329,0.722-5.845,2.312c-1.517,1.589-2.26,3.763-2.033,5.948l20.732,200.374c-6.528,2.388-19.222,6.131-34.64,6.131
+		c-15.313,0-28.076-3.759-34.638-6.146l20.73-200.359c0.226-2.185-0.517-4.359-2.033-5.948s-3.646-2.437-5.846-2.312l-92.85,5.188
+		v-22.833l81.028,4.526c3.298,0.187,6.309-1.797,7.452-4.883c1.143-3.087,0.14-6.558-2.473-8.559
+		c-11.747-8.997-22.577-20.953-31.319-34.576c-13.575-21.153-21.051-44.866-21.051-66.77c0-23.681,7.794-46.172,21.946-63.328
+		c15.202-18.43,36.726-29,59.054-29s43.853,10.57,59.054,29c14.151,17.157,21.945,39.647,21.945,63.328
+		c0,21.903-7.477,45.616-21.052,66.769c-8.741,13.623-19.571,25.579-31.319,34.576c-2.613,2.001-3.615,5.472-2.473,8.559
+		c1.143,3.086,4.168,5.071,7.451,4.883l81.029-4.526V240.422z"/>
+	<path d="M292.04,132.998c0.712-4.081-2.019-7.965-6.1-8.677c-4.087-0.715-7.966,2.019-8.678,6.099
+		c-4.555,26.106-23.462,53.806-44.755,66.189c-22.742-13.318-45.857-46.639-45.857-78.343c0-31.528,20.568-57.178,45.85-57.178
+		c21.198,0,39.517,17.937,44.547,43.619c0.797,4.064,4.736,6.716,8.802,5.918c4.065-0.796,6.715-4.737,5.919-8.802
+		c-6.429-32.816-30.8-55.735-59.268-55.735c-33.553,0-60.85,32.379-60.85,72.178c0,40.074,29.847,79.775,57.5,93.577
+		c1.054,0.526,2.202,0.79,3.349,0.79s2.295-0.263,3.35-0.79C262.782,198.401,286.414,165.242,292.04,132.998z"/>
+</g>
+</svg> Discover wonders worth seeing</h1>
     </div>
+
     <div class="content">
-        Book with us your ticket into the wonders of Egypt <h2>Welcome to the Museums of Egypt</h2>
-        <p>Explore the rich history and culture of Egypt through its world-renowned museums. From ancient artifacts to modern art, our museums offer a glimpse into the fascinating past and vibrant present of this incredible country.</p>    
+    <div class="filters" id="middle">
+        <button data-name="all" class="active">All cities</button>
+        <button data-name="giza">Giza</button>
+        <button data-name="cairo">Cairo</button>
+        <button data-name="luxor">Luxor</button>
+        <button data-name="aswan">Aswan</button>
+        <button data-name="alex">Alexandria</button>
+    </div> 
+    <div class="places">
+        <div class="place" id="one" data-name="giza">
+           <h5>Abu Simbel Temples</h5> 
+           <div class= "info"> 
+            <p >
+                <a href="https://maps.app.goo.gl/BENABpgwGQ5GFnAZ9" target="_blank">
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg></a>
+            Aswan, Nubia</p>
+            <p>Two massive rock temples built by Pharaoh Ramesses II, featuring colossal statues and intricate hieroglyphics</p>
+        </div>
+    </div>
+         <div class="place" id="two" data-name="alex">
+           <h5>Alexandria National Museum</h5> 
+           <div class= "info">
+             <p ><a href="https://maps.app.goo.gl/RwuUox3dnS2jRprJ9" target="_blank">
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg></a>
+            Alexandria, Tariq Al-Horreya St</p>
+            <p>The museum contains around 1,800 artifacts that narrate the story of Alexandria and Egypt</p>            
+        </div>
+        </div>
+         <div class="place" id="three" data-name="cairo">
+           <h5>Coptic Museum</h5> 
+            <div class= "info">    <p >
+                <a href="https://maps.app.goo.gl/DLNPkd6PRb6Gezi38" target="_blank">
+             
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg></a> 
+            Cairo, Masr AL Kadima
+            </p>
+            <p>The Coptic Museum houses the largest collection of Coptic artifacts in the world</p>            
+        </div>
+        </div>
+                <div class="place" id="four" data-name="giza">
+           <h5>Dahshur Pyramids</h5> 
+            <div class= "info">
+            <p >
+            <a href="https://maps.app.goo.gl/KtfCMx5KdMkCVsvV9" target="_blank">
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg></a>
+            Giza, Dahshur
+            </p>
+            <p>Ancient pyramid complex including the Bent Pyramid and Red Pyramid, showcasing early pyramid construction</p>            
+        </div>
+        </div>
+         <div class="place" id="five" data-name="cairo">
+           <h5>Egyptian Museum</h5> 
+            <div class= "info"> <p >
+                <a href="https://maps.app.goo.gl/XATHvz6ej2kcqppp7" target="_blank">
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg></a> Cairo, Tahrir Square
+            </p>
+            <p>It is the oldest archaeological museum in the Middle East, housing over 170,000 artefacts</p>            
+        </div>
+        </div>
+         <div class="place" id="six" data-name="giza">
+           <h5>Grand Egyptian Museum</h5> 
+            <div class= "info"> <p >
+                <a href="https://maps.app.goo.gl/KQ8P7eARbfUuKxyL9" target="_blank">
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg></a> 
+            Giza, Cairo-Alexandria Desert Road
+            </p>
+            <p>The world's largest archaeological museum dedicated to a single civilization, showcasing Egypt's great heritage</p>            
+        </div>
+        </div>
+         <div class="place" id="seven" data-name="giza">
+           <h5>The Giza Necropolis</h5> 
+            <div class= "info"> <p >
+                <a href="https://maps.app.goo.gl/Y3CvRftQ3PoVRzWKA" target="_blank">
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg></a> Giza, Al Haram
+            </p>
+            <p>Home to the Great Pyramid, the Pyramid of Khafre, and the Pyramid of Menkaure and the Great Sphinx. A site of great historical significance</p>            
+        </div>
+        </div>
+         <div class="place" id="eight" data-name="aswan">
+           <h5>Kalabsha Temple</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+         <div class="place" id="nine" data-name="luxor">
+           <h5>Karnak Temple</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="ten" data-name="alex">
+           <h5>Kom El Shoqafa</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+         <div class="place" id="elev" data-name="luxor">
+           <h5>Luxor Museum</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+         <div class="place" id="twel" data-name="luxor">
+           <h5>Luxor Temple</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="thir" data-name="cairo">
+           <h5>Manial Palace Museum</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="fourt" data-name="giza">
+           <h5>Memphis Open-Air Museum</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="fift" data-name="luxor">
+           <h5>Mummification Museum</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="sixt" data-name="cairo">
+           <h5>Museum of Islamic Art</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="sevent" data-name="cairo">
+           <h5>National Museum of Egyptian Civilization</h5>
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div> 
+        </div>
+        <div class="place" id="eightt" data-name="aswan">
+           <h5>Nubian Museum</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="ninet" data-name="aswan">
+           <h5>Philae Temple</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen" data-name="alex">
+           <h5>Qaitbay Citadel</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+         <div class="place" id="twen1" data-name="alex">
+           <h5>Royal Jewelry Museum</h5> 
+           <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen2" data-name="giza">
+           <h5>Saqqara Necropolis</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen3" data-name="cairo">
+           <h5>Sadat Museum</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen4" data-name="luxor">
+           <h5>Temple of Hatshepsut</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen5" data-name="aswan">
+           <h5>Temple of Kalabsha</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen6" data-name="luxor">
+           <h5>Tomb of Tutankhamun</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen7" data-name="luxor">
+           <h5>Valley of the Kings</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+        <div class="place" id="twen8" data-name="luxor">
+           <h5>Valley of the Queens</h5> 
+            <div class= "info"> <p >
+            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
+            </svg>
+            </p>
+            <p></p>            
+        </div>
+        </div>
+    </div>
+</div>
+    <div class = "booking">
+        <form id="book">    
+          <select name="City" id="cityselect" onchange="selection()">
+                <option value="Cairo" selected>Cario</option>
+                <option value="Giza">Giza</option>
+                <option value="Luxor">Luxor</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Alex">Alexandria</option>
+                <option value="Fayoum">Fayoum</option>
+            </select>
+            <select>
+
+                <option value="Giza" selected>Grand Egyptian Museum</option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="cairo">The Egyptian Museum</option>   
+                <option value="cairo">Museum of Islamic Art</option>
+                <option value="cairo">Coptic Museum</option>
+                <option value="cairo">Royal Carriages Museum</option>
+                <option value="cairo">National Museum of Egyptian Civilization</option>
+                <option value="cairo">Manial Palace Museum</option>
+                <option value="cairo">Sadat Museum</option>
+                <option value="place">Salah El-Din Citadel</option>
+                <option value="place">Muhammad Ali Mosque</option>
+                <option value="place">Sultan Hassan Mosque</option>
+                <option value="place">Al-Rifa’i Mosque</option>
+              
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+                <option value="place"></option>
+            </select>
+            <select>
+                <option></option>
+            </select>
+            <p id="selection"></p>
+            <button onclick="booked()">Book</button>
+        </form>
+    </div>
+    <div class="contact">
+
+    </div>
+    <a href="#top" id="topref"> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></a>
+
+    <script>
+        function sideBarOn()
+        {
+            sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex';
+        }
+        function sideBarOff()
+        {
+            sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none';
+        }
+        function darkMode() 
+        {
+            const nav = document.querySelector("nav");
+             if (document.body.style.backgroundColor === "antiquewhite" || !document.body.style.backgroundColor) 
+             {
+                document.body.style.backgroundColor = "darkblue";
+                nav.style.backgroundColor = "darkblue";
+             }
+             else
+              {
+                document.body.style.backgroundColor = "antiquewhite";
+                nav.style.backgroundColor = "antiquewhite";
+            }
+        }
+
+    function booked()
+    {
+        alert("Booking was successful!");
+    }
+    let originalFontSize = parseInt(window.getComputedStyle(document.body).getPropertyValue("font-size"));
+    function fontinc() 
+    {
+    let currentSize = parseInt(window.getComputedStyle(document.body).getPropertyValue("font-size"));
+    document.body.style.fontSize = (currentSize + 2) + "px";
+    }
+    function fontdec() 
+    {
+    let currentSize = parseInt(window.getComputedStyle(document.body).getPropertyValue("font-size"));
+    document.body.style.fontSize = (currentSize - 2) + "px";
+    }
+    function fontReset() 
+    {
+    document.body.style.fontSize = originalFontSize + "px";
+    }
+    function share()
+    {
+
+    }
+    const places ={
+        cairo:[""]
+    }
+    function selection()
+    {
+        var city =document.getElementById("cityselect").value;
+        var dest = document.getElementById("destselect").value;
+        var dest = document.getElementById("ticketsnum").value;
+        document.getElementById("selection").innerHTML= `You have selected city: ${city}, destination: ${dest}, and a number of tickets${num}`;
+    }
+    </script>
+
 </body>
 </html>

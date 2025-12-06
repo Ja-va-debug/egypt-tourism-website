@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: darkred;
+    transition: transform 0.5s ease;
+}
+body{
+    min-height: 100vh;
+    background-color: antiquewhite;
+    font-size: 20px;
+    background-image: url("patterns.jpg");
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    overflow-x: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+}
+.uppernav{
+    position: fixed;
+    width: 100%;
+    background-color: antiquewhite;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.338);
+    background-image: url("patterns.jpg");
+    background-repeat: repeat;
+    background-blend-mode: overlay; 
+    transition: 1s;
+    height:70px;
+    z-index: 999;
+}
+.uppernav svg:hover
+{
+    transform: scale(1.5);
+}
+.uppernav ul
+{ 
+     display: flex;
+}
+.uppernav ul, .sidebar ul{
+    width: 100%;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center; 
+
+}
+.uppernav li{
+    display: flex;
+    align-items: center;
+}
+.uppernav li:first-child{
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.uppernav button, .sidebar button{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    height:80%;
+
+}
+.hideOnMobile:hover{
+    transform: scale(1.2);
+
+}
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 9999;
+    display: none;
+    background-color: rgba(250, 235, 215, 0.322);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0) ;
+    flex-direction: column;
+    justify-content: flex-start;
+    backdrop-filter: blur(3px);
+    border-left: 1px solid darkred;
+    transition: 1s;
+}
+.sidebar li{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sidebar button
+{
+    padding: 15px 20px;
+    width: 100%;
+}
+.sidebar button:hover
+{
+    background: rgba(255, 228, 196, 0.775);
+    border-radius: 15px;
+    cursor: pointer;
+    background-image: url("patterns.jpg");
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    border:1px inset darkred;
+}
+svg{
+    width: 30px;
+    height: 30px;
+    fill:darkred;
+    cursor: pointer;
+}
+#menubutton
+{
+    display: none;
+    
+}
+@media(max-width:800px)
+{
+    .uppernav .hideOnMobile{
+display: none;  
+  }
+    #menubutton
+    {
+        display:block;
+    }
+}
+@media(max-width:500px)
+{
+.sidebar{
+    width: 100%;
+}
+}
+.lownav
+{
+    display:flex;
+    position: fixed;
+    flex-direction: row;
+    z-index: 999;
+    width: 100%;
+    background-color: rgb(255, 246, 234);
+    border-bottom: 1px solid rgba(139, 0, 0, 0.338);
+    top: 71px;
+    background-image: url("patterns.jpg");
+    background-repeat: repeat;
+    background-blend-mode: overlay
+  
+}
+.lownav ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+.lownav a
+{
+    text-decoration: none;
+    transition: 0.3s;
+}
+.lownav a:hover
+{
+    background-color: rgba(255, 210, 164, 0.271);
+}
