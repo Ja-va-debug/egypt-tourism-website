@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="style.css"></script>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="museum.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museums</title>
 </head>
 <body>
    <nav class="uppernav">
     <ul>
-        <li><a href="homepage.html">
+        <li id="toolTitle"><a href="homepage.html">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 465 465">
 <g>
@@ -40,16 +39,16 @@
 	<path d="M232.5,136.099c22.305,0,40.452-18.147,40.452-40.453S254.805,55.193,232.5,55.193c-22.306,0-40.453,18.147-40.453,40.453
 		S210.194,136.099,232.5,136.099z M232.5,70.193c14.034,0,25.452,11.418,25.452,25.453s-11.418,25.453-25.452,25.453
 		c-14.035,0-25.453-11.418-25.453-25.453S218.465,70.193,232.5,70.193z"/>
-</g>
+</g>      
 </svg>
-        </a></li>
-        <li id="toolTitle"><h1>Destinations</h1></li>
+        </a> <h1>Destinations</h1></li>
+
        
         <li class="hideOnMobile"><button onclick="darkMode()"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T464-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T160-484q0 135 94.5 229.5T484-160Zm-20-305Z"/></svg></button></li>
         <li class="hideOnMobile"><button onclick="fontinc()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm504 104v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"/></svg></button></li>
         <li class="hideOnMobile"><button onclick="fontReset()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-200v-80h560v80H200Zm76-160 164-440h80l164 440h-76l-38-112H392l-40 112h-76Zm138-176h132l-64-182h-4l-64 182Z"/></svg></button></li>
         <li class="hideOnMobile"><button onclick="fontdec()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  ><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm384-16v-80h320v80H600Z"/></svg></button></li>
-        <li class="hideOnMobile"><button onclick="share()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg></button></li>
+        <li class="hideOnMobile"><button onclick="sharing()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg></button></li>
         <li id="menubutton" onclick="sideBarOn()">  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1060 960 960" >
                 <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
     </ul>
@@ -66,21 +65,22 @@
         <li><button onclick="fontinc()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm504 104v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"/></svg></button></li>
         <li><button onclick="fontReset()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-200v-80h560v80H200Zm76-160 164-440h80l164 440h-76l-38-112H392l-40 112h-76Zm138-176h132l-64-182h-4l-64 182Z"/></svg></button></li>
         <li><button onclick="fontdec()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"  ><path d="m40-200 210-560h100l210 560h-96l-51-143H187l-51 143H40Zm176-224h168l-82-232h-4l-82 232Zm384-16v-80h320v80H600Z"/></svg></button></li>
-        <li><button onclick="share()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg></button></li>
+        <li><button onclick="sharing()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"/></svg></button></li>
     </ul>
 </div>
 
 <nav class="lownav">
-    <ul>
-        <li><a href="#top">Top</a></li>
-        <li><a href="#middle">Places</a></li>
-        <li><a href="#book">Booking</a></li>
-        <li><a href="#contact">contact us</a></li>
+    <ul> 
+        <li><a href="login.html">Sign up/login</a></li>
+        <li><a href="homepage.css">Home</a></li>
+        <li><a href="souvenir.html">Relics</a></li>
     </ul>
 </nav>
     <div class="top">
-        <img src="pyramids-removebg.png" alt="" class="pyramids-overlay">
-        <h1><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        <div class="pic">
+        <img src="images/pyramids.jpg" class="pyramids-overlay">        
+        </div>
+        <h1 id ="h1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 465 465">
 <g>
 	<path d="M359.789,204.209c-1.498-1.416-3.509-2.154-5.571-2.039l-67.758,3.785c6.814-7.158,13.099-15.166,18.611-23.757
@@ -133,7 +133,7 @@
            <h5>Alexandria National Museum</h5> 
            <div class= "info">
              <p ><a href="https://maps.app.goo.gl/RwuUox3dnS2jRprJ9" target="_blank">
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
             </svg></a>
             Alexandria, Tariq Al-Horreya St</p>
@@ -145,7 +145,7 @@
             <div class= "info">    <p >
                 <a href="https://maps.app.goo.gl/DLNPkd6PRb6Gezi38" target="_blank">
              
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
             </svg></a> 
             Cairo, Masr AL Kadima
@@ -158,7 +158,7 @@
             <div class= "info">
             <p >
             <a href="https://maps.app.goo.gl/KtfCMx5KdMkCVsvV9" target="_blank">
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
             </svg></a>
             Giza, Dahshur
@@ -170,7 +170,7 @@
            <h5>Egyptian Museum</h5> 
             <div class= "info"> <p >
                 <a href="https://maps.app.goo.gl/XATHvz6ej2kcqppp7" target="_blank">
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
             </svg></a> Cairo, Tahrir Square
             </p>
@@ -181,7 +181,7 @@
            <h5>Grand Egyptian Museum</h5> 
             <div class= "info"> <p >
                 <a href="https://maps.app.goo.gl/KQ8P7eARbfUuKxyL9" target="_blank">
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
             </svg></a> 
             Giza, Cairo-Alexandria Desert Road
@@ -190,10 +190,10 @@
         </div>
         </div>
          <div class="place" id="seven" data-name="giza">
-           <h5>The Giza Necropolis</h5> 
+           <h5>Giza Necropolis</h5> 
             <div class= "info"> <p >
                 <a href="https://maps.app.goo.gl/Y3CvRftQ3PoVRzWKA" target="_blank">
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
             </svg></a> Giza, Al Haram
             </p>
@@ -203,324 +203,442 @@
          <div class="place" id="eight" data-name="aswan">
            <h5>Kalabsha Temple</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <a href="https://maps.app.goo.gl/XNeNVcsmZUQnPrPx6" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
-            </p>
-            <p></p>            
+            </svg></a>
+            Aswan ,Bab al-Kalabsha
+             </p>
+            <p>The largest free-standing temple in Lower Nubia. Multiple cultures have left their mark on the temple of Kalabsha</p>            
         </div>
         </div>
          <div class="place" id="nine" data-name="luxor">
-           <h5>Karnak Temple</h5> 
+           <h5>Karnak Temple Complex</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <a href="https://maps.app.goo.gl/NNm3w54hWKd9uMkN6" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, Karnak
             </p>
-            <p></p>            
+            <p>Comprises a vast mix of temples, pylons, chapels, and other buildings. It is the largest religious complex ever built by humans</p>            
         </div>
         </div>
         <div class="place" id="ten" data-name="alex">
            <h5>Kom El Shoqafa</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <a href="https://maps.app.goo.gl/aqn93yS889kkdk788" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Alexandria, Karmouz District 
             </p>
-            <p></p>            
+            <p>One of Alexandria’s main attractions. As they are wonderful examples of the influence of Ancient Egyptian art on Roman art</p>            
         </div>
         </div>
          <div class="place" id="elev" data-name="luxor">
            <h5>Luxor Museum</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/EqtT83Dd215dVpYj7" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, Kornish Al Nile
             </p>
-            <p></p>            
+            <p>Known as one of Egypt’s best cultural sites. It is praised for its mix of research and visitor-friendly experiences</p>            
         </div>
         </div>
          <div class="place" id="twel" data-name="luxor">
            <h5>Luxor Temple</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <a href="https://maps.app.goo.gl/ivSkN8KQGYSZAsJK7" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, East Bank
             </p>
-            <p></p>            
+            <p>Located in the heart of Luxor, this temple is a magnificent example of ancient Egyptian architecture and religious devotion</p>            
         </div>
         </div>
         <div class="place" id="thir" data-name="cairo">
            <h5>Manial Palace Museum</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <a href="https://maps.app.goo.gl/Jn3TbByEgDYJxGfS9" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>Cairo, Manial
             </p>
-            <p></p>            
+            <p>This Cairo palace blends Islamic and European architectural styles and houses royal artifacts. Visitors can explore the lush gardens and richly decorated rooms</p>            
         </div>
         </div>
         <div class="place" id="fourt" data-name="giza">
            <h5>Memphis Open-Air Museum</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                  <a href="https://maps.app.goo.gl/e1h5Z2aggkkLvmvD9" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Giza, Mit Rahina
             </p>
-            <p></p>            
+            <p>An open-air site showcasing colossal statues and remnants of ancient Memphis, the old capital of Egypt. It provides a glimpse into the grandeur of Pharaonic civilization</p>            
         </div>
         </div>
         <div class="place" id="fift" data-name="luxor">
            <h5>Mummification Museum</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/XD1kvTQd2mYGqKCFA" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, Kornish Al Nile
             </p>
-            <p></p>            
+            <p>This museum explains the mummification process in ancient Egypt. It displays tools, embalmed remains, and interactive exhibits</p>            
         </div>
         </div>
         <div class="place" id="sixt" data-name="cairo">
            <h5>Museum of Islamic Art</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/MvmCnYkVhbX9xGGT8" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Cairo, Bab El-Khalq
             </p>
-            <p></p>            
+            <p>Features one of the world’s largest collections of Islamic art, including textiles, ceramics, and manuscripts. Its architecture itself is a work of art</p>            
         </div>
         </div>
         <div class="place" id="sevent" data-name="cairo">
            <h5>National Museum of Egyptian Civilization</h5>
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/f3UUoYXy3vHknHiL8" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Cairo, Fustat
             </p>
-            <p></p>            
+            <p>Chronicles Egypt’s history from prehistoric times to the present. Famous for hosting the royal mummies parade</p>            
         </div> 
         </div>
         <div class="place" id="eightt" data-name="aswan">
            <h5>Nubian Museum</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/3rTaz7EEqejEbaDw6" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Aswan, El Numaria
             </p>
-            <p></p>            
+            <p>The museum’s design reflects traditional Nubian architecture and it showcases beautiful Nubian culture</p>            
         </div>
         </div>
         <div class="place" id="ninet" data-name="aswan">
            <h5>Philae Temple</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/ebYpTmzujhy1pZFeA" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Aswan, Agilkia Island
             </p>
-            <p></p>            
+            <p>An island-based temple complex, includes many structures dating predominantly to the Ptolemaic Period</p>            
         </div>
         </div>
         <div class="place" id="twen" data-name="alex">
            <h5>Qaitbay Citadel</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/mu382Q8bQqn2JGN76" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Alexandria, Eastern Harbor
             </p>
-            <p></p>            
+            <p> A 15th-century fortress built on the site of the ancient Lighthouse of Alexandria. It offers stunning views of the Mediterranean</p>            
         </div>
         </div>
          <div class="place" id="twen1" data-name="alex">
            <h5>Royal Jewelry Museum</h5> 
            <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/ahgCDZcedRvSgQbJ7" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Alexandria, Zizenia
             </p>
-            <p></p>            
+            <p>Displays the jewelry, crowns, and personal items of the royal Muhammad Ali family. Highlights the opulence of Egypt’s royal history</p>            
         </div>
         </div>
         <div class="place" id="twen2" data-name="giza">
            <h5>Saqqara Necropolis</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/ncqYzAEh86ruUBfSA" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Giza, Saqqara
             </p>
-            <p></p>            
+            <p>The vast burial ground near Giza, illustrates the evolution of pyramid construction and ancient funerary practices</p>            
         </div>
         </div>
         <div class="place" id="twen3" data-name="cairo">
            <h5>Sadat Museum</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/EZyj5g4t9oYJkjYVA" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Cairo, Abbassia
             </p>
-            <p></p>            
+            <p> Dedicated to former President Anwar Sadat, showcasing personal items, photographs, and historical documents</p>            
         </div>
         </div>
         <div class="place" id="twen4" data-name="luxor">
            <h5>Temple of Hatshepsut</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/nSWPpCiBzG8dJVAD8" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, Deir el-Bahari
             </p>
-            <p></p>            
+            <p>Temple honoring Pharaoh Hatshepsut. It's terraces and colonnades are celebrated for their architectural elegance</p>            
         </div>
         </div>
-        <div class="place" id="twen5" data-name="aswan">
-           <h5>Temple of Kalabsha</h5> 
+        <div class="place" id="twen5" data-name="luxor">
+           <h5>Tomb of Tutankhamun</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/MznDnpeW5QEETzAH7" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, Valley of the Kings
             </p>
-            <p></p>            
+            <p>The famous boy king’s tomb in the Valley of the Kings, renowned for its treasures and artifacts. It provides insight into 18th Dynasty royal life</p>            
         </div>
         </div>
         <div class="place" id="twen6" data-name="luxor">
-           <h5>Tomb of Tutankhamun</h5> 
+           <h5>Valley of the Kings</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/vA7aRTfq8jcTseRQ7" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, West Bank
             </p>
-            <p></p>            
+            <p>Vast burial ground for pharaohs and nobles of the New Kingdom. It's tombs reveal ancient Egyptian religious beliefs about the afterlife</p>            
         </div>
         </div>
         <div class="place" id="twen7" data-name="luxor">
-           <h5>Valley of the Kings</h5> 
-            <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
-            </p>
-            <p></p>            
-        </div>
-        </div>
-        <div class="place" id="twen8" data-name="luxor">
            <h5>Valley of the Queens</h5> 
             <div class= "info"> <p >
-            <svg style="fill:rgb(255, 246, 234)" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <a href="https://maps.app.goo.gl/CGYWH1aHwPoVwUDc6" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                 <path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/>
-            </svg>
+            </svg></a>
+            Luxor, West Bank
             </p>
-            <p></p>            
+            <p> A necropolis near Luxor for queens and royal children. The tombs feature intricate wall paintings depicting daily life and religious rituals</p>            
         </div>
         </div>
     </div>
 </div>
     <div class = "booking">
-        <form id="book">    
-          <select name="City" id="cityselect" onchange="selection()">
-                <option value="Cairo" selected>Cario</option>
+        <form onsubmit="booked(); return false;">
+         <label>City:</label>
+          <select name="City" id="cityselect" onchange="selection()" required>
+             <option value="" disabled selected hidden>Select a city</option>
+                <option value="Cairo">Cario</option>
                 <option value="Giza">Giza</option>
                 <option value="Luxor">Luxor</option>
                 <option value="Aswan">Aswan</option>
                 <option value="Alex">Alexandria</option>
-                <option value="Fayoum">Fayoum</option>
-            </select>
-            <select>
-
-                <option value="Giza" selected>Grand Egyptian Museum</option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="cairo">The Egyptian Museum</option>   
-                <option value="cairo">Museum of Islamic Art</option>
-                <option value="cairo">Coptic Museum</option>
-                <option value="cairo">Royal Carriages Museum</option>
-                <option value="cairo">National Museum of Egyptian Civilization</option>
-                <option value="cairo">Manial Palace Museum</option>
-                <option value="cairo">Sadat Museum</option>
-                <option value="place">Salah El-Din Citadel</option>
-                <option value="place">Muhammad Ali Mosque</option>
-                <option value="place">Sultan Hassan Mosque</option>
-                <option value="place">Al-Rifa’i Mosque</option>
-              
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-                <option value="place"></option>
-            </select>
-            <select>
-                <option></option>
-            </select>
-            <p id="selection"></p>
-            <button onclick="booked()">Book</button>
+         </select>
+         <label>Destination:</label>
+         <select name="Destination" id="destselect" required>
+            <option disabled selected hidden>Select a city first!</option>
+         </select>
+         <label>Ticket/s:</label>
+         <input type="number" required min="1">
+         <button type="submit" id="submit" >Book</button>
         </form>
     </div>
-    <div class="contact">
-
-    </div>
     <a href="#top" id="topref"> <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" ><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></a>
+<div class="shareBG">
+    <div class="share">
+        <div class="textCont">
+            <h2>Share this page</h2>
+            <button onclick="shareOff()" class="closeBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </button>
+        </div> 
+        <div class="urlCont">
+            <input type="text" class="url" id="url" readonly>
+            <button class="copybutton" id="copybutton" onclick="copy()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
 
     <script>
+        sidebar=document.querySelector(".sidebar");
+        share= document.querySelector(".shareBG");
+        const pageUrl = window.location.href;
         function sideBarOn()
         {
-            sidebar=document.querySelector('.sidebar')
-            sidebar.style.display='flex';
+            sidebar.style.display="flex";
         }
         function sideBarOff()
         {
-            sidebar=document.querySelector('.sidebar')
             sidebar.style.display='none';
         }
         function darkMode() 
         {
-            const nav = document.querySelector("nav");
-             if (document.body.style.backgroundColor === "antiquewhite" || !document.body.style.backgroundColor) 
-             {
-                document.body.style.backgroundColor = "darkblue";
-                nav.style.backgroundColor = "darkblue";
-             }
-             else
-              {
-                document.body.style.backgroundColor = "antiquewhite";
-                nav.style.backgroundColor = "antiquewhite";
-            }
+            document.body.classList.toggle("darkmode");
         }
+        function sharing()
+        {
+            share.style.opacity=1;
+            share.style.pointerEvents="auto"; 
+            document.getElementById("url").value = pageUrl;
+            
 
-    function booked()
+        }
+        function shareOff()
+        {
+            share.style.opacity=0;
+            share.style.pointerEvents="none";
+            document.getElementById("copybutton").innerHTML=`  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                    <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/>
+                </svg>`;
+        }
+        function copy()
+        {
+            const inpt = document.getElementById("url");
+            const btn = document.getElementById("copybutton");
+            inpt.select();
+            document.execCommand("copy");
+            btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>`;
+
+        }
+        function booked()
     {
         alert("Booking was successful!");
     }
-    let originalFontSize = parseInt(window.getComputedStyle(document.body).getPropertyValue("font-size"));
-    function fontinc() 
+    const root = document.querySelector(":root");
+    let originalFontSize = parseInt(getComputedStyle(root).getPropertyValue("--font-size"));
+    const min = 12;
+    const max = 36;
+    function getFontSize()
     {
-    let currentSize = parseInt(window.getComputedStyle(document.body).getPropertyValue("font-size"));
-    document.body.style.fontSize = (currentSize + 2) + "px";
+         return parseInt(getComputedStyle(root).getPropertyValue("--font-size"));
+    }
+    function fontinc()         
+    {
+        let currentSize=getFontSize();
+
+        if(currentSize < max)
+    {
+        root.style.setProperty('--font-size', currentSize + 2 + "px");
+        
+    }
+    else 
+    {
+        console.log("Max font size");
+    }
     }
     function fontdec() 
     {
-    let currentSize = parseInt(window.getComputedStyle(document.body).getPropertyValue("font-size"));
-    document.body.style.fontSize = (currentSize - 2) + "px";
+        let currentSize=getFontSize();
+
+        if(currentSize > min)
+    {
+        root.style.setProperty('--font-size', currentSize - 2 + "px");
+
+    }
+    else
+    {
+        console.log("Min font size");
+
+    }
     }
     function fontReset() 
     {
-    document.body.style.fontSize = originalFontSize + "px";
+        root.style.setProperty('--font-size', originalFontSize + "px");
     }
-    function share()
-    {
+    
+    const filters =document.querySelectorAll(".filters button");
+    const cards =document.querySelectorAll(".places .place");
 
-    }
-    const places ={
-        cairo:[""]
-    }
-    function selection()
+    const filterCards = e => 
     {
-        var city =document.getElementById("cityselect").value;
-        var dest = document.getElementById("destselect").value;
-        var dest = document.getElementById("ticketsnum").value;
-        document.getElementById("selection").innerHTML= `You have selected city: ${city}, destination: ${dest}, and a number of tickets${num}`;
+        document.querySelector(".active").classList.remove("active");
+        e.target.classList.add("active");
+
+        cards.forEach( place =>{
+            place.classList.add("hide");
+            if(place.dataset.name === e.target.dataset.name || e.target.dataset.name === "all")
+        {
+            place.classList.remove("hide");
+        }
+        } )
     }
+
+    filters.forEach(button => button.addEventListener("click", filterCards));    
+
+    const cities = {
+    Alex:
+    [ 
+        "Alexandria National Museum",
+        "Kom El Shoqafa",
+        "Qaitbay Citadel",
+        "Royal Jewelry Museum"
+    ],
+
+    Aswan:
+    ["Kalabsha Temple","Nubian Museum","Philae Temple "],
+    
+     Cairo :
+     ["Coptic Museum", "Egyptian Museum", "Manial Palace Museum",
+     "Museum of Islamic Art", "National Museum of Egyptian Civilization",
+     "Sadat Museum"],
+
+    Giza:
+    ["Abu Simbel Temples", "Dahshur Pyramids","Grand Egyptian Museum","The Giza Necropolis",
+        "Memphis Open-Air Museum",
+        "Saqqara Necropolis"
+    ],
+
+    Luxor:
+    [
+        "Karnak Temple Complex","Luxor Museum", "Luxor Temple","Mummification Museum",
+        "Temple of Hatshepsut","Tomb of Tutankhamun","Valley of the Kings", "Valley of the Queens"
+    ]};
+
+
+  function selection() {
+    const citySelect = document.getElementById("cityselect");
+    const destSelect = document.getElementById("destselect");
+    const selectedCity = citySelect.value;
+    destSelect.innerHTML =`<option value="" disabled selected hidden>Select a city</option>`;
+    if (selectedCity && cities[selectedCity]) {
+            destSelect.innerHTML =`<option value="" disabled selected hidden>Select a destination</option>`;
+                    cities[selectedCity].forEach(place => {
+                        const option = document.createElement("option");
+                        option.value = place;
+                        option.textContent = place;
+                        destSelect.appendChild(option);
+                    });
+                }
+             }
+            
+
     </script>
 
 </body>

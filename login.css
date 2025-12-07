@@ -1,0 +1,317 @@
+:root
+{
+    --main-bg-color:antiquewhite;
+    --main-font-color:darkred;
+    --border: 1px solid rgba(139, 0, 0, 0.338);
+    --sidebar-bg:rgba(255, 228, 196, 0.775);
+    --sidebar-button-bg:rgba(250, 235, 215, 0.322);
+    --dark-border:1px solid darkred;
+    --light-bg:rgb(255, 246, 234);
+    --button-bg: rgb(255, 254, 253);
+    --button-border: 1px solid rgba(211, 211, 211, 0.314);
+    --info-bg:rgba(139, 0, 0, 0.523);
+    --font-size:20px;
+    --shadow:0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+body.darkmode
+{
+    --main-bg-color:#182255;
+    --main-font-color:#C6A135;
+    --border:1px solid #958254;
+    --sidebar-bg:#0a1533f6;
+    --sidebar-button-bg:rgba(250, 235, 215, 0.322);
+    --dark-border:1px solid #C6A135;
+    --light-bg:#07122f;
+    --button-bg:#000106;
+    --button-border: 1px solid #c6a23560;
+    --info-bg:#c6a235a1;
+    --shadow:0 5px 15px rgba(255, 255, 255, 0.35);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    background-color: var(--main-bg-color);   
+    font-size: var(--font-size);
+    overflow-x: hidden;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+    color: var(--main-font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+svg{
+    width: 30px;
+    height: 30px;
+    fill:var(--main-font-color);
+    
+}
+a{
+    text-decoration: underline;
+}
+
+.topbar
+{   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 25px 0px 0px;
+    top: 0px;
+    position: absolute;
+    left: 5px;
+    right: 10px;
+    border-bottom:var(--dark-border) ;
+    background-image: url("images/patterns.jpg");
+    background-blend-mode:multiply;
+    background-color: var(--main-bg-color);
+}
+.topbar ul{
+    list-style: none;
+}
+.left
+{   display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.topbar button
+{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#moon:hover
+{
+    transform: scale(1.5);
+    transition: 0.3s ease;
+
+}
+
+.cont{
+    background-color: var(--light-bg);
+    border-radius: 30px;
+    box-shadow:var(--shadow);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+.cont p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.cont button
+{
+    border:var(--button-border);
+    color: var(--main-font-color);
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--button-bg);
+    box-shadow: -2px  2px 0px rgba(0, 0, 0, 0.129);
+    cursor: pointer;
+    transition:all 0.6s ease;
+}
+.cont button:hover
+{
+background: var(--main-font-color);
+color: var(--button-bg);
+transform:translateY(-5px) ;
+
+}
+.cont input
+{
+    height: 50px;
+    border: var(--dark-border);
+    border-radius: 10px;
+    padding: 10px 15px;
+
+}
+.cont form{
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    height: 100%;
+    gap: 10px;
+}
+
+.login, .signUp{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.login{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+.signUp{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.cont.active .signUp{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+.container.active .login{
+    transform: translateX(100%);
+}
+@keyframes move{
+    0%, 49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.toggleCont{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition:0.3s ease-in-out;
+    border-radius: 20px;
+    z-index: 1000;   
+    color: var(--main-bg-color);
+
+}
+.cont.active .toggleCont{
+    transform: translateX(-100%);
+    border-radius: 20px;
+}
+.toggle{
+    background-color: var(--main-font-color);
+    height: 100%;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.cont.active .toggle{
+    transform: translateX(50%);
+}
+.toggleLeft, .toggleRight{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+.toggleLeft{
+    transform: translateX(-200%);
+    background-image:url("images/pattern.jpg") ;
+    background-position: left;
+    background-blend-mode: multiply;
+    background-color: var(--main-font-color);
+
+}
+.cont.active .toggleLeft{
+    transform: translateX(0);
+}
+.toggleRight{
+    right: 0;
+    transform: translateX(0);
+    background-image: url(images/ancientpatterns.png);
+        background-blend-mode: multiply;
+
+
+}
+.message
+{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--light-bg);
+    border: 3px solid var(--main-font-color);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    z-index: 2000;
+    min-width: 320px;
+    max-width: 400px;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events:none;
+
+}
+
+.message[style*="visibility: visible"] {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+.message ul {
+    list-style: none;
+    padding: 0;
+}
+
+.message ul li {
+    padding: 10px 15px;
+    margin: 8px 0;
+    background: var(--button-bg);
+    border: var(--button-border);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--main-font-color);
+    transition: all 0.3s ease;
+}
+.message ul li:hover {
+    background: var(--main-font-color);
+    color: var(--button-bg);
+    transform: translateX(5px);
+}
+.message ul li::before {
+    content: "✓ ";
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+
